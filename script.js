@@ -42,20 +42,20 @@
         }
             if(e.keyCode==13){
                 for (let i = 0; i < directions.length; i++){
-                    if(directions[0].pos === 'x'){
-                        if(directions[0].operator === '+'){
+                    if(directions[i].pos === 'x'){
+                        if(directions[i].operator === '+'){
                             moveRight = xPos+=5
                         }
-                        if(directions[0].operator === '-'){
+                        if(directions[i].operator === '-'){
                             moveLeft = xPos-=5
                         }
                         
                     }
-                    if(directions[0].pos === 'y'){
+                    if(directions[i].pos === 'y'){
                         if(directions[0].operator === '+'){
                             moveUp = yPos+=5
                         }
-                        if(directions[0].operator === '-'){
+                        if(directions[i].operator === '-'){
                             moveDown = yPos-=5
                         }
                         
